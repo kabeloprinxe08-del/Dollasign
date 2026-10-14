@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dollasign | Ride The Wind. Streetwear from Brits, North West</title>
+<meta name="description" content="Dollasign: premium heavyweight tees, panel caps and crop tops from Brits, North West. Shop the new arrival and get nationwide delivery in 3 to 5 business days.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="prog"></div>
+<canvas id="hero3d"></canvas>
+
+<header id="hd">
+  <a class="logo" href="#top" aria-label="Dollasign home"><img id="logoimg" alt="Dollasign logo" hidden><span id="logotxt"><b>DOLLA</b><i>$</i><b>IGN</b></span></a>
+  <nav class="nl" aria-label="Main"><a href="#shop">Shop</a><a href="#studio">3D studio</a><a href="#story">Our story</a><a href="#help">Delivery &amp; FAQ</a><a href="#visit">Visit</a><a href="#contact">Contact</a></nav>
+  <div class="hr">
+    <a class="btn mini" href="#shop">Shop New Arrival</a>
+    <button class="ic" id="cbtn" type="button" aria-label="Open cart"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8zM9 8V6a3 3 0 0 1 6 0v2"/></svg><i id="cn" hidden>0</i></button>
+    <button class="ic menu" id="mbtn" type="button" aria-label="Open menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18M3 16h18"/></svg></button>
+  </div>
+</header>
+<div class="mnav" id="mnav" aria-hidden="true"><a href="#shop">Shop</a><a href="#studio">3D studio</a><a href="#story">Our story</a><a href="#help">Delivery &amp; FAQ</a><a href="#visit">Visit</a><a href="#contact">Contact</a></div>
+
+<main>
+<section id="top" class="scene" aria-label="Ride The Wind">
+  <div class="pin">
+    <div class="slides">
+      <div class="sl on" data-i="0">
+        <p class="kick"><i></i>New drop</p>
+        <h1>Ride<br>The Wind</h1>
+        <p class="lead">The new Dollasign collection. Heavyweight tees, panel caps and crop tops built to move with you.</p>
+        <div class="acts"><a class="btn solid" href="#shop">Shop New Arrival</a><a class="btn" href="#studio">Try it in 3D</a></div>
+      </div>
+      <div class="sl" data-i="1">
+        <p class="kick"><i></i>The fabric</p>
+        <h2>180gsm to 300gsm.<br>Built heavy.</h2>
+        <p class="lead">Premium heavyweight tees that hold their shape wash after wash. Tees from R400.</p>
+        <div class="acts"><a class="btn solid" href="#shop">Shop tees</a></div>
+      </div>
+      <div class="sl" data-i="2">
+        <p class="kick"><i></i>The roots</p>
+        <h2>From Brits.<br>Worn everywhere.</h2>
+        <p class="lead">Music, DJ culture and street fashion. Delivered nationwide in 3 to 5 business days.</p>
+        <div class="acts"><a class="btn solid" href="#shop">Shop New Arrival</a><a class="btn" href="#story">Our story</a></div>
+      </div>
+    </div>
+    <div class="dots" id="sdots" aria-hidden="true"><i class="on"></i><i></i><i></i></div>
+    <div class="cue" aria-hidden="true"><span></span>Scroll</div>
+  </div>
+</section>
+
+<div class="trust"><div><b>180 to 300gsm</b><span>Premium heavyweight tees</span></div><div><b>3 to 5 business days</b><span>Nationwide delivery</span></div><div><b>Order on WhatsApp</b><span>Quick, personal service</span></div><div><b>From Brits</b><span>North West, South Africa</span></div></div>
+
+<section id="drop" class="wrap drop">
+  <div><p class="eyebrow">Next drop</p><h2>Ride The Wind</h2><p class="muted" id="dropmsg">The new collection is on its way. Get notified first, and shop the new arrival before it sells out.</p>
+    <div class="cd" id="cd" hidden><div><b id="cdD">0</b>days</div><div><b id="cdH">0</b>hours</div><div><b id="cdM">0</b>mins</div><div><b id="cdS">0</b>secs</div></div>
+  </div>
+  <form id="nf" class="glass"><label>Get the drop on WhatsApp<input name="phone" type="tel" placeholder="Your WhatsApp number" required></label><button class="btn solid" type="submit">Notify me</button></form>
+</section>
+
+<section id="shop" class="wrap">
+  <div class="sh"><div><p class="eyebrow">Shop</p><h2>New arrivals</h2></div><select id="sort" aria-label="Sort products"><option value="feat">Featured</option><option value="lo">Price: low to high</option><option value="hi">Price: high to low</option></select></div>
+  <div class="fbar glass"><div class="tabs" id="tabs"></div><div class="szf"><span>Size</span><div id="sizes"></div></div></div>
+  <div class="grid" id="grid"></div>
+  <p class="fine">Sample products. Tee prices range from R400 to R500 depending on the fabric weight. Caps and crop top prices are samples and will be updated.</p>
+</section>
+
+<section id="studio" class="wrap studio">
+  <div class="sh"><div><p class="eyebrow">3D studio</p><h2>See it from every angle</h2></div></div>
+  <div class="stu">
+    <div class="vwrap glass"><canvas id="view3d"></canvas><p class="vhint">Drag to rotate</p></div>
+    <div class="vpanel glass">
+      <div class="tabs" id="vt"></div>
+      <h3 id="vn"></h3>
+      <label class="gs" id="gsw">Fabric weight<select id="vg"></select></label>
+      <div><span class="lab">Colour</span><div class="sw" id="vc"></div></div>
+      <div><span class="lab">Size</span><div class="sz" id="vs"></div></div>
+      <div class="vp"><b id="vp"></b><span>Delivery in 3 to 5 business days</span></div>
+      <button class="btn solid" id="vadd" type="button">Add to cart</button>
+    </div>
+  </div>
+</section>
+
+<section id="story" class="wrap story">
+  <div class="vin glass"><canvas id="vinyl3d"></canvas></div>
+  <div class="stxt">
+    <p class="eyebrow">Our story</p>
+    <h2>Born in Brits. Raised on the beat.</h2>
+    <div id="storytxt"></div>
+    <div class="chips"><span>Music</span><span>DJ culture</span><span>Street fashion</span><span>Brits, North West</span></div>
+  </div>
+</section>
+
+<section id="help" class="wrap help">
+  <div class="dlv glass"><p class="eyebrow">Delivery</p><h2>3 to 5 business days. Nationwide.</h2><p>Order today and we ship anywhere in South Africa. Most orders arrive within 3 to 5 business days.</p></div>
+  <div class="faq" id="faq"></div>
+</section>
+
+<section class="wrap rev">
+  <div class="sh"><div><p class="eyebrow">Reviews</p><h2>What customers say</h2></div></div>
+  <div class="rvs" id="rvs"></div>
+</section>
+
+<section id="visit" class="wrap visit">
+  <div class="vtxt">
+    <p class="eyebrow">Visit</p><h2>Find Dollasign</h2>
+    <address id="addr"></address>
+    <div class="hrs" id="hrs"></div>
+    <span id="badge" class="badge"></span>
+  </div>
+  <div class="mapbox glass"><iframe title="Dollasign location on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Brits%2C%20North%20West%2C%20South%20Africa&amp;output=embed"></iframe><a class="btn mini mapbtn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Brits+North+West+South+Africa">Open in Google Maps</a></div>
+</section>
+
+<section id="contact" class="wrap contact">
+  <div class="ctxt">
+    <p class="eyebrow">Contact and support</p><h2>Talk to us</h2>
+    <p class="muted">Questions about sizing, orders or delivery? Message us. We reply fast.</p>
+    <ul class="clist"><li><span>Email</span><a id="mail" href="#"></a></li><li><span>Phone and WhatsApp</span><a id="call" href="#"></a></li><li><span>Based in</span>Brits, North West, South Africa</li><li><span>Delivery</span>Nationwide, 3 to 5 business days</li></ul>
+  </div>
+  <form id="f" class="glass">
+    <label>Your name<input name="name" required autocomplete="name"></label>
+    <label>Phone number<input name="phone" type="tel" required autocomplete="tel"></label>
+    <label>How can we help?<textarea name="msg" rows="4" required></textarea></label>
+    <div class="fbtns"><button class="btn solid" type="submit">Send on WhatsApp</button><button class="btn" type="button" id="mailbtn">Send by email</button></div>
+  </form>
+</section>
+</main>
+
+<footer>
+  <div class="fin">
+    <div class="big"><div class="flogo"><b>DOLLA</b><i>$</i><b>IGN</b></div><p>Premium streetwear from Brits, North West. Ride the wind.</p><div class="fsoc" id="fsoc"></div></div>
+    <div><h4>Shop</h4><a href="#shop">New arrivals</a><a href="#studio">3D studio</a><a href="#drop">Next drop</a></div>
+    <div><h4>Support</h4><a href="#help">Delivery &amp; FAQ</a><a href="#contact">Contact</a><a href="#visit">Visit</a></div>
+    <div><h4>Contact</h4><a id="fmail" href="#"></a><a id="fcall" href="#"></a></div>
+  </div>
+  <div class="fbot"><span>&copy; <span id="yr"></span> Dollasign. All rights reserved.</span><a href="#top" id="totop">Back to top</a></div>
+</footer>
+
+<div id="dback"></div>
+<aside id="drawer" class="glass" aria-hidden="true" aria-label="Your cart">
+  <div class="dh"><h3>Your cart</h3><button class="ic" id="dx" type="button" aria-label="Close cart"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <div id="dl"></div>
+  <div class="dtot"><span>Subtotal</span><b id="dt">R 0</b></div>
+  <form id="of">
+    <label>Your name<input name="name" required autocomplete="name"></label>
+    <label>Phone number<input name="phone" type="tel" required autocomplete="tel"></label>
+    <label>Delivery address<input name="address" required autocomplete="street-address"></label>
+    <label>Notes<textarea name="note" rows="2"></textarea></label>
+    <button class="btn solid" type="submit">Order on WhatsApp</button>
+    <p class="fine">Nationwide delivery in 3 to 5 business days. Delivery fee and payment are confirmed on WhatsApp.</p>
+  </form>
+</aside>
+<div id="toast" role="status"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
